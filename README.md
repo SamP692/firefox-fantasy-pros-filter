@@ -12,6 +12,7 @@ to the rankings of a particular view without having to painstakingly click a lar
     - [Node](#node)
     - [TypeScript](#typescript)
     - [Webpack](#webpack)
+    - [Preact](#preact)
   - [Web-ext](#web-ext)
   - [Building and Running](#building-and-running)
     - [Building](#building)
@@ -70,6 +71,10 @@ The two apps that power this project are compiled from TypeScript to single-file
 There is a common Webpack configuration as well as project-specific configurations.
 
 Additionally, the Webpack configurations rely upon a TypeScript configuration file found in the project root.
+
+#### Preact
+
+This project uses Preact to power its views.
 
 ### Web-ext
 
