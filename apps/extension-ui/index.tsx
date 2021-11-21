@@ -7,12 +7,14 @@ import { getEntryElement } from '~ui/utils'
 /* App Entry Point Element */
 const appEntryElement = getEntryElement()
 
-const SomeTestElement = () => (
-    <span>Some Test Element</span>
-)
+/* App */
+import App from '~ui/app'
+
+/* Styles */
+import './index.css'
 
 /* App Initialization */
 render(
-    <SomeTestElement />,
+    <App />,
     appEntryElement
 )
