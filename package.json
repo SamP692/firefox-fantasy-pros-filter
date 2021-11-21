@@ -1,0 +1,41 @@
+{
+    "name": "fantasy-pros-firefox-filter",
+    "version": "2.0.0",
+    "description": "This repo creates a firefox extension that augments Fantasy Pros' expert filtering popup",
+    "scripts": {
+        "build": "npm run build:ui; npm run build:script",
+        "build:ui": "webpack -c ./webpack/webpack.extension-ui.js",
+        "build:script": "webpack -c ./webpack/webpack.content-script.js",
+        "start:ui": "webpack serve -c ./webpack/webpack.extension-ui.dev.js",
+        "start:script": "webpack serve -c ./webpack/webpack.content-script.dev.js",
+        "start:extension": "web-ext run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SamP692/fantasy-pros-filter.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SamP692/fantasy-pros-filter/issues"
+    },
+    "homepage": "https://github.com/SamP692/fantasy-pros-filter#readme",
+    "dependencies": {
+        "preact": "*"
+    },
+    "devDependencies": {
+        "@babel/core": "*",
+        "@babel/preset-env": "*",
+        "awesome-typescript-loader": "*",
+        "babel-loader": "*",
+        "clean-webpack-plugin": "*",
+        "css-loader": "*",
+        "html-webpack-plugin": "*",
+        "style-loader": "*",
+        "typescript": "*",
+        "webpack": "*",
+        "webpack-cli": "*",
+        "webpack-dev-server": "*",
+        "webpack-merge": "*"
+    }
+}

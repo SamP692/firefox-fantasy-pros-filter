@@ -1,0 +1,21 @@
+{
+    "name": "Fantasy Pros Filter",
+    "version": "0.0.2",
+    "description": "Adds convenience and additional configuration to expert selections",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "browser_action": {
+        "default_popup": "dist/extension-ui/index.html",
+        "default_title": "Fantasy Pros Filter"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://*.fantasypros.com/*/rosters.jsp?key=*"
+        ],
+        "js": ["dist/content-script/bundle.js"],
+        "all_frames": true
+    }]
+}

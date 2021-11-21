@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "target": "ES5",
+        "strict": true,
+        "strictNullChecks": true,
+        "alwaysStrict": true,
+        "baseUrl": ".",
+        "paths": {
+            "~ui/*": ["apps/extension-ui/*"],
+            "~script/*": ["apps/content-script/*"],
+            "~global-types": ["global-types"],
+            "~services": ["services"],
+            "~global-configs": ["global-configs"]
+        }
+    },
+    "include": [
+        "./apps/",
+        "./services/",
+        "./global-configs/"
+    ],
+}
